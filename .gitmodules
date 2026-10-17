@@ -1,3 +1,48 @@
 [submodule "projects/veloren-agent-intergration"]
 	path = projects/veloren-agent-intergration
 	url = https://github.com/itsdarklikehell/veloren-agent-intergration.git
+[submodule "projects/veloren"]
+	path = projects/veloren
+	url = https://github.com/itsdarklikehell/veloren.git
+[submodule "projects/teloren"]
+	path = projects/teloren
+	url = https://github.com/itsdarklikehell/teloren.git
+[submodule "projects/airshipper"]
+	path = projects/airshipper
+	url = https://github.com/itsdarklikehell/airshipper.git
+[submodule "projects/hermes-agent"]
+	path = projects/hermes-agent
+	url = https://github.com/itsdarklikehell/hermes-agent.git
+[submodule "projects/hermes-skills"]
+	path = projects/hermes-skills
+	url = https://github.com/itsdarklikehell/hermes-skills.git
+[submodule "projects/ci-templates"]
+	path = projects/ci-templates
+	url = https://github.com/itsdarklikehell/ci-templates.git
+[submodule "projects/ComfyUI-Installer"]
+	path = projects/ComfyUI-Installer
+	url = https://github.com/itsdarklikehell/ComfyUI-Installer.git
+[submodule "projects/SwarmUI"]
+	path = projects/SwarmUI
+	url = https://github.com/itsdarklikehell/SwarmUI.git
+[submodule "projects/OpenClaw-bot-review"]
+	path = projects/OpenClaw-bot-review
+	url = https://github.com/itsdarklikehell/OpenClaw-bot-review.git
+[submodule "projects/openclaw-office"]
+	path = projects/openclaw-office
+	url = https://github.com/itsdarklikehell/openclaw-office.git
+[submodule "projects/GLaDOS-TTS"]
+	path = projects/GLaDOS-TTS
+	url = https://github.com/itsdarklikehell/GLaDOS-TTS.git
+[submodule "projects/hermes-desktop"]
+	path = projects/hermes-desktop
+	url = https://github.com/itsdarklikehell/hermes-desktop.git
+[submodule "projects/hermes-webui"]
+	path = projects/hermes-webui
+	url = https://github.com/itsdarklikehell/hermes-webui.git
+[submodule "projects/pokemon-agent"]
+	path = projects/pokemon-agent
+	url = https://github.com/itsdarklikehell/pokemon-agent.git
+[submodule "projects/agent-of-empires"]
+	path = projects/agent-of-empires
+	url = https://github.com/itsdarklikehell/agent-of-empires.git
