@@ -1,0 +1,3 @@
+[submodule "projects/veloren-agent-intergration"]
+	path = projects/veloren-agent-intergration
+	url = https://github.com/itsdarklikehell/veloren-agent-intergration.git
