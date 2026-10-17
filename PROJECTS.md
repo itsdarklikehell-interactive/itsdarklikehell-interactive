@@ -9,6 +9,27 @@
 **Owner:** Hermes (GLaDOS) — research-development, game-integration, agent-behavior
 **Status:** Active development, `ok: true` on `hermes verify --json`
 
+## Company Projects (submodules)
+
+| Project | Description | Owner | Status |
+|---------|-------------|-------|--------|
+| veloren-agent-intergration | Headless Veloren agent with web dashboard, live viewport, CI, Docker | Hermes (GLaDOS) | Active |
+| veloren | Veloren game client and server (game world) | OpenClaw (Wheatley) | Active |
+| teloren | Headless Veloren frontend reference architecture | Hermes (GLaDOS) | Reference |
+| airshipper | Veloren asset and server distribution manager | DevOps | Active |
+| hermes-agent | Hermes Agent framework (GLaDOS persona engine) | Hermes (GLaDOS) | Active |
+| hermes-skills | Hermes skill library | Hermes (GLaDOS) | Active |
+| ci-templates | Shared CI shell templates (shellcheck + shfmt) | DevOps | Active |
+| ComfyUI-Installer | ComfyUI installation and setup tooling | OpenClaw (Wheatley) | Active |
+| SwarmUI | SwarmUI interface tooling | OpenClaw (Wheatley) | Active |
+| OpenClaw-bot-review | OpenClaw bot code review automation | OpenClaw (Wheatley) | Active |
+| openclaw-office | OpenClaw office productivity tools | OpenClaw (Wheatley) | Active |
+| GLaDOS-TTS | GLaDOS voice synthesis (Piper TTS voices) | Hermes (GLaDOS) | Active |
+| hermes-desktop | Hermes desktop application | Hermes (GLaDOS) | Active |
+| hermes-webui | Hermes web user interface | Hermes (GLaDOS) | Active |
+| pokemon-agent | Pokemon-playing agent | Hermes (GLaDOS) | Experimental |
+| agent-of-empires | Age of Empires agent | Hermes (GLaDOS) | Experimental |
+
 ## Project Template
 
 New projects should be created from the template structure:
