@@ -4,78 +4,72 @@ Open source software and game-development tooling. Built by agents, for humans.
 
 ## About
 
-itsdarklikehell Interactive is an open source software and game development company operating under DBA in the Netherlands. Our flagship product is **veloren-agent-intergration** — a headless stdio/JSON agent frontend for the Veloren game, controlled by the Hermes AI agent (GLaDOS persona). The organization maintains 100 repositories across AI agents, security tooling, gaming, RetroPie emulation, SDR radio, infrastructure, and personal projects.
+itsdarklikehell Interactive is an open source software and game development company operating under DBA in the Netherlands. Our flagship product is **veloren-agent-intergration** — a headless stdio/JSON agent frontend for the Veloren game, controlled by the Hermes AI agent (GLaDOS persona). The organization maintains 387 repositories across AI agents, security tooling, gaming, RetroPie emulation, SDR radio, infrastructure, and personal projects.
 
-## Projects (All 42 Own Repositories)
+## Own Repositories (51)
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| veloren-agent-intergration | Headless Veloren agent with web dashboard, live viewport, CI, Docker | Active |
-| ci-templates | Reusable GitHub Actions CI workflows for the itsdarklikehell fleet | Active |
+| itsdarklikehell-interactive |  | Active |
+| veloren-agent-intergration | Veloren agent integration project | Active |
+| my-resume | Digitale resume van Bauke Molenaar | Active |
+| batch_comfytester-stub | Batch Civitai/ComfyUI model tester — automated AI image/video generation testing with prompt pools, per-family output sorting, and workflow builders | Active |
+| ci-templates | Reusable GitHub Actions CI workflows for the itsdarklikehell fleet (lint/typecheck/test/build). Single source of truth. | Active |
+| pwnagotchi-control-center | A (remote) control center for pwnagotchi... (think: locally: Flashing a pwnagotchi zip or image to an sd or mmc and add custom config.toml and plugins to it / Creating a flashable backup of an allready made pwnagotchi sd or mmc card / Setting up a bluetooth pan and adding it to a custom config.toml / Connecting to a running pwnagotchi) | Active |
+| pwnagotchi4b | RPi4B Pwnagotchi + Fancygotchi (off-brand Waveshare 3.5B / ILI9486) with an A2A 'mothership' bridge so GLaDOS (Hermes) and Wheatley (OpenClaw) can remotely help/control it. Built with Bauke Molenaar. | Active |
+| sunvox-installer-lutris | Sunvox Installer Lutris | Active |
+| skills-getting-started-with-github-copilot | Exercise: Get started using GitHub Copilot | Active |
+| blather | blather - project van Hans Molenaar | Active |
+| fleet-manager | GitHub Fleet Manager - Automated GitHub fleet management with cron jobs, monitoring, and reporting | Active |
+| pwnsorter | A python plugin for pwnagotchi to sort cracked access points and their passwords. | Active |
+| Create-a-Retropie-Extra-Scriptmodule | Helps one create and install a Retropie-Extra scriptmodule for your Retropie-Setup | Active |
+| RetroPie-Sunvox | RetroPie Sunvox Engine "Emulator" | Active |
+| security-toolkit | Security scanning en auditing tools | Active |
 | api-gateway | Centrale API gateway voor alle fleet services | Active |
-| fleet-manager | GitHub Fleet Manager — automated fleet management with cron jobs, monitoring, reporting | Active |
 | fleet-dashboard | Standalone web dashboard voor de GitHub Fleet Manager | Active |
 | github-automation-scripts | Herbruikbare GitHub automatisering scripts | Active |
-| hermes-backup | Hermes agent state backup (config, skills, memories, cron) — no secrets | Active |
-| hermes-agent | Hermes Agent framework (GLaDOS persona engine) | Active |
-| pwnagotchi4b | RPi4B Pwnagotchi + Fancygotchi with A2A bridge for GLaDOS & Wheatley | Active |
-| pwnagotchi-control-center | Remote control center for pwnagotchi — flashing, backup, Bluetooth PAN | Active |
-| pwnsorter | Python plugin for pwnagotchi — sort cracked access points and passwords | Active |
-| pwnspeaker | Python plugin for pwnagotchi TTS | Active |
-| apprise-notify | Plugin for pwnagotchi that uses apprise to send notifications | Active |
-| pwnagotchi-plugins | Collectie van Pwnagotchi-plugins voor Wi-Fi auditing en pentesting | Active |
-| pwnagotchijay | Raspberry Pi instrumenting Bettercap for Wi-Fi pwning | Active |
-| pwnmothership | Project van Hans Molenaar | Active |
-| security-toolkit | Security scanning en auditing tools | Active |
-| ingress-multi-passcode-redeemer | Tool to redeem multiple passcodes on intel map | Active |
-| AngryOxide | 802.11 Attack Tool | Active |
-| veloren | Veloren game client and server (mirror of gitlab.com/veloren/veloren) | Active |
-| blather | Project van Hans Molenaar | Active |
-| sunvox-installer-lutris | Sunvox Installer Lutris | Active |
-| Create-a-Retropie-Extra-Scriptmodule | Create and install a Retropie-Extra scriptmodule | Active |
-| RetroPie-Sunvox | RetroPie Sunvox Engine "Emulator" | Active |
-| RetroPie-Nointro-Full-Romsets | Download and extract No-Intro full romsets on RetroPie | Active |
-| RetroPie-With-Bgm | Retropie with bgm theme notifications and controls | Active |
+| RetroPie-Nointro-Full-Romsets | Download and extract No-Intro full romsets in proper directories on RetroPie. | Active |
+| pwnspeaker | A python plugin for pwnagotchi that enables it to utilize tts to speak. | Active |
+| apprise-notify | An plugin for pwnagotchi that uses apprise to send notifications. | Active |
+| pwnagotchi-plugins | Collectie van Pwnagotchi-plugins voor Wi-Fi auditing en pentesting op Raspberry Pi. | Active |
+| ingress-multi-passcode-redeemer | A tool to redeem multiple passcodes on intel map. | Active |
+| RetroPie-With-Bgm | Retropie with bgm theme notifications and controls. | Active |
 | RetroPie-ROMs-on-USB | Running ROMs from a USB drive | Active |
-| pokemon-agent | Pokemon-playing agent | Experimental |
-| airi | Self hosted Grok Companion — realtime voice chat, Minecraft, Factorio | Active |
-| raspbian-installer | Download, unzip, burn and modify a raspbian version to a device | Active |
-| raspbian-after-burner | raspbian-after-burner - project van Hans Molenaar | Active |
-| picoTracker | picoTracker - project van Hans Molenaar | Active |
 | picoTracker-Theme-Studio | picoTracker Theme Studio | Active |
-| tv-control | Control TV over HDMI (cec-client) | Active |
-| stonetop-wiki-generator | Generate a static wiki from the Stonetop Book PDFs | Active |
-| Open-LLM-VTuber | Talk to any LLM with hands-free voice, voice interruption, Live2D face | Experimental |
-| avoid-ai-writing | Skill that audits and rewrites content to remove AI writing patterns | Active |
-| ccusage | npx ccusage | Active |
-| clawhub | Skill + Plugin Registry for OpenClaw | Active |
-| Domo-Installer | Domo-Installer - project van Hans Molenaar | Active |
-| rtorrent | rTorrent BitTorrent client | Active |
-| ProxmoxVE | Proxmox VE Helper-Scripts (Community Edition) | Active |
-| PVE-mods | Proxmox modifications | Active |
-| foundryvtt-docker | Easy-to-deploy containerized Foundry Virtual Tabletop server | Active |
-| charnik-content-srd | SRD D&D 5.1.0 and SRD D&D 5.2.1 for Charnik | Active |
-| autocontext | Recursive self-improving harness for agents | Active |
-| the-good-bits | Auto audio sample chopper and extractor | Active |
-| dice | Compute dice rolls according to RPG dice notation | Active |
-| skills-getting-started-with-github-copilot | Exercise: Get started using GitHub Copilot | Active |
-| my-resume | Bilingual/multilingual live-updating CV/resume site — 4 languages, 16 sections | Active |
-| itsdarklikehell-interactive | Hub repository — charter, org chart, CI, docs | Active |
-| omarchy-config | Omarchy configuration synced by omarsync | Active |
-| omarchy-configs | Omarchy configurations | Active |
-| omarchy-dotfiles | Per-host Omarchy dotfiles (chezmoi) — desktop + laptop | Active |
-| batch_comfytester-stub | Batch Civitai/ComfyUI model tester stub | Active |
-| batch_comfytester | Batch Civitai/ComfyUI model tester stub | Active |
+| raspbian-after-burner | raspbian-after-burner - project van Hans Molenaar | Active |
+| tv-control | Control tv over HDMI (cec-cient) | Active |
+| raspbian-installer | download,unzip,burn and modify a raspbian verrsion to a device | Active |
+| raspi-flasher | This script can download and/or flash various raspberry pi images. | Active |
+| sshfs-menu | sshfs-menu - project van Hans Molenaar | Active |
+| start-menu | A start menu for RPI to install/start a custom command or tool from a curated list | Active |
+| raspberry-pi-mount-usb | Properly Mount USB Storage on Raspberry Pi | Active |
+| bash_aliases | A huge collection of handy bash aliases. | Active |
+| Master-Installer | Master-Installer - project van Hans Molenaar | Active |
+| stacks | My docker stacks, nothing special | Active |
+| schoolground-tracking | Track users and display them on a map to navigate and such | Active |
+| OpenMWMods | A Huge collectin of mods for openmw | Active |
+| GLaDOS-TTS | GLaDOS Piper TTS voice build (voice model + piper/espeak-ng runtime) | Active |
+| RetroPie-Stream-Recording | RetroPie-Stream-Recording - project van Hans Molenaar | Active |
+| RetroPie-Podcatcher | RetroPie-Podcatcher - project van Hans Molenaar | Active |
+| RetroPie-Internet-Radio | RetroPie-Internet-Radio - project van Hans Molenaar | Active |
+| RetroPie-Goodrom-Full-Romsets | RetroPie-Goodrom-Full-Romsets - project van Hans Molenaar | Active |
+| RetroPie-Bios-Files | Download and extract bios files needed for emulation in proper directories on RetroPie. | Active |
+| RetroPie-Bgm | This will add background music while in emulation station on RetroPie (and possibly other debian systems) | Active |
+| hmol33-my-resume | Fork of hmol33/my-resume for PR | Active |
 
 ## Private Repositories (5)
 
 | Repo | Description |
 |------|-------------|
 | omarchy-config | Omarchy configuration synced by omarsync |
-| omarchy-configs | Omarchy configurations |
-| omarchy-dotfiles | Per-host Omarchy dotfiles (chezmoi) — desktop + laptop |
+| omarchy-configs |  |
+| batch_comfytester | Batch Civitai/ComfyUI model tester — automated AI image/video generation testing with prompt pools, per-family output sorting, and workflow builders |
 | hermes-backup | Hermes agent state backup (config, skills, memories, cron) — no secrets |
-| batch_comfytester | Batch Civitai/ComfyUI model tester stub |
+| omarchy-dotfiles | Per-host Omarchy dotfiles (chezmoi) — desktop + laptop |
+
+## Public Forks (336)
+
+The organization also maintains 336 public forks across AI agents, tabletop/RPG, RetroPie/emulation, security, SDR/radio, infrastructure, awesome lists, and gaming. See PROJECTS.md for the complete fork index.
 
 ## Quick Start
 
