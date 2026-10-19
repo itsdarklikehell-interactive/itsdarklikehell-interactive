@@ -4,31 +4,57 @@
 
 ### veloren-agent-intergration
 
-**Repository:** `https://github.com/itsdarklikehell/veloren-agent-intergration`
+**Repository:** `https://github.com/itsdarklikehell-interactive/veloren-agent-intergration`
 **Description:** Headless stdio/JSON agent frontend for Veloren, with web dashboard, live viewport, CI pipeline, Docker Compose deployment, Prometheus metrics, and integration tests.
 **Owner:** Hermes (GLaDOS) — research-development, game-integration, agent-behavior
-**Status:** Active development, `ok: true` on `hermes verify --json`
+**Status:** Active development
 
-## Company Projects (submodules)
+## Core Infrastructure
 
 | Project | Description | Owner | Status |
 |---------|-------------|-------|--------|
-| veloren-agent-intergration | Headless Veloren agent with web dashboard, live viewport, CI, Docker | Hermes (GLaDOS) | Active |
-| veloren | Veloren game client and server (game world) | OpenClaw (Wheatley) | Active |
-| teloren | Headless Veloren frontend reference architecture | Hermes (GLaDOS) | Reference |
-| airshipper | Veloren asset and server distribution manager | DevOps | Active |
-| hermes-agent | Hermes Agent framework (GLaDOS persona engine) | Hermes (GLaDOS) | Active |
-| hermes-skills | Hermes skill library | Hermes (GLaDOS) | Active |
-| ci-templates | Shared CI shell templates (shellcheck + shfmt) | DevOps | Active |
-| ComfyUI-Installer | ComfyUI installation and setup tooling | OpenClaw (Wheatley) | Active |
-| SwarmUI | SwarmUI interface tooling | OpenClaw (Wheatley) | Active |
-| OpenClaw-bot-review | OpenClaw bot code review automation | OpenClaw (Wheatley) | Active |
-| openclaw-office | OpenClaw office productivity tools | OpenClaw (Wheatley) | Active |
-| GLaDOS-TTS | GLaDOS voice synthesis (Piper TTS voices) | Hermes (GLaDOS) | Active |
-| hermes-desktop | Hermes desktop application | Hermes (GLaDOS) | Active |
-| hermes-webui | Hermes web user interface | Hermes (GLaDOS) | Active |
-| pokemon-agent | Pokemon-playing agent | Hermes (GLaDOS) | Experimental |
-| agent-of-empires | Age of Empires agent | Hermes (GLaDOS) | Experimental |
+| ci-templates | Reusable GitHub Actions CI workflows for the itsdarklikehell fleet (lint/typecheck/test/build). Single source of truth. | DevOps | Active |
+| api-gateway | Centrale API gateway voor alle fleet services | DevOps | Active |
+| fleet-manager | GitHub Fleet Manager — automated GitHub fleet management with cron jobs, monitoring, and reporting | DevOps | Active |
+| fleet-dashboard | Standalone web dashboard voor de GitHub Fleet Manager | DevOps | Active |
+| github-automation-scripts | Herbruikbare GitHub automatisering scripts | DevOps | Active |
+| hermes-backup | Hermes agent state backup (config, skills, memories, cron) — no secrets | Hermes (GLaDOS) | Active |
+
+## AI & Agent Projects
+
+| Project | Description | Owner | Status |
+|---------|-------------|-------|--------|
+| hermes-agent | The agent that grows with you — Hermes Agent framework (GLaDOS persona engine) | Hermes (GLaDOS) | Active |
+| pwnagotchi4b | RPi4B Pwnagotchi + Fancygotchi with A2A 'mothership' bridge so GLaDOS (Hermes) and Wheatley (OpenClaw) can remotely help/control it | OpenClaw (Wheatley) | Active |
+
+## Security & Networking
+
+| Project | Description | Owner | Status |
+|---------|-------------|-------|--------|
+| security-toolkit | Security scanning en auditing tools | Security | Active |
+| pwnagotchi-control-center | Remote control center for pwnagotchi — flashing, backup, Bluetooth PAN, config.toml | Security | Active |
+| pwnsorter | A python plugin for pwnagotchi to sort cracked access points and their passwords | Security | Active |
+| ingress-multi-passcode-redeemer | A tool to redeem multiple passcodes on intel map | Security | Active |
+
+## Gaming & Entertainment
+
+| Project | Description | Owner | Status |
+|---------|-------------|-------|--------|
+| veloren | Veloren game client and server (game world) — mirror of gitlab.com/veloren/veloren | OpenClaw (Wheatley) | Active |
+| blather | blather - project van Hans Molenaar | Hans Molenaar | Active |
+| sunvox-installer-lutris | Sunvox Installer Lutris | OpenClaw (Wheatley) | Active |
+| Create-a-Retropie-Extra-Scriptmodule | Create and install a Retropie-Extra scriptmodule for your Retropie-Setup | Hans Molenaar | Active |
+| RetroPie-Sunvox | RetroPie Sunvox Engine "Emulator" | Hans Molenaar | Active |
+| RetroPie-Nointro-Full-Romsets | Download and extract No-Intro full romsets in proper directories on RetroPie | Hans Molenaar | Active |
+| RetroPie-With-Bgm | Retropie with bgm theme notifications and controls | Hans Molenaar | Active |
+| RetroPie-ROMs-on-USB | Running ROMs from a USB drive | Hans Molenaar | Active |
+
+## Resume & Personal
+
+| Project | Description | Owner | Status |
+|---------|-------------|-------|--------|
+| my-resume | Bilingual/multilingual live-updating CV/resume site — single static HTML page, 4 languages (NL/EN/DE/FR), 16 sections, live data from 10 platforms via GitHub Actions | Bauke Molenaar | Active |
+| itsdarklikehell-interactive | Hub repository — charter, org chart, CI, docs | Project Lead | Active |
 
 ## Project Template
 
