@@ -1,0 +1,59 @@
+name: Gource visualization
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: gource-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gource:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Render Gource video
+        uses: nbprojekt/gource-action@57256d303c5a9a5e72ed92ba13e3e83c5ec8b257 # v1.3.0
+        with:
+          gource_title: "itsdarklikehell-interactive | Development History"
+          gource_resolution: "1080p"
+          gource_fps: 60
+          gource_auto_skip_seconds: 0.65
+          gource_seconds_per_day: 0.12
+          gource_time_scale: 1.5
+          gource_font_size: 38
+          gource_font_color: "E8EAF0"
+          gource_background_color: "070B16"
+          gource_overlay_background_color: "10182A"
+          gource_bloom_multiplier: 0.5
+          gource_bloom_intensity: 0.5
+          gource_key: "--key"
+          gource_camera_mode: "overview"
+          gource_hide_items: "mouse"
+          gource_user_scale: 1.25
+          gource_dir_depth: 3
+          gource_filename_time: 3.5
+          gource_file_filter: '(^|/)gource\.mp4$|(__pycache__|\.pyc|node_modules|\.git/)'
+          avatars_auto_fetch: true
+
+      - name: Verify rendered video
+        run: test -s ./gource/gource.mp4
+
+      - name: Upload Gource video
+        uses: actions/upload-artifact@v4
+        with:
+          name: gource-itsdarklikehell-interactive
+          path: ./gource/gource.mp4
+          if-no-files-found: error
+          retention-days: 14
