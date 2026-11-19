@@ -3,8 +3,13 @@ name: Gource visualization
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - "gource.mp4"
+      - ".github/workflows/gource.yml"
   pull_request:
     branches: [main, master]
+    paths-ignore:
+      - "gource.mp4"
   workflow_dispatch:
 
 concurrency:
@@ -92,7 +97,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Gource video is already up to date."
           else
-            git commit -m "chore: publish updated Gource video"
+            git commit -m "chore: publish refreshed Gource video"
             if git push; then
               echo "published=true" >> "$GITHUB_OUTPUT"
             else
@@ -110,8 +115,8 @@ jobs:
           branch: automation/gource-video-update
           delete-branch: true
           add-paths: gource.mp4
-          title: "chore: publish updated Gource video"
-          commit-message: "chore: publish updated Gource video"
+          title: "chore: publish refreshed Gource video"
+          commit-message: "chore: publish refreshed Gource video"
           body: |
             This PR publishes the latest generated root-level Gource video.
 
