@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   gource:
-    if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message || '', 'chore: publish updated Gource video') }}
+    if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message || '', 'chore: publish refreshed Gource video') }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -65,7 +65,7 @@ jobs:
           retention-days: 14
 
   publish:
-    if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message || '', 'chore: publish updated Gource video') }}
+    if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message || '', 'chore: publish refreshed Gource video') }}
     # PRs produce review artifacts only. Publish a durable root-level MP4 from the default branch.
     if: github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch
     needs: gource
@@ -98,7 +98,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Gource video is already up to date."
           else
-            git commit -m "chore: publish updated Gource video"
+            git commit -m "chore: publish refreshed Gource video"
             if git push; then
               echo "published=true" >> "$GITHUB_OUTPUT"
             else
@@ -116,8 +116,8 @@ jobs:
           branch: automation/gource-video-update
           delete-branch: true
           add-paths: gource.mp4
-          title: "chore: publish updated Gource video"
-          commit-message: "chore: publish updated Gource video"
+          title: "chore: publish refreshed Gource video"
+          commit-message: "chore: publish refreshed Gource video"
           body: |
             This PR publishes the latest generated root-level Gource video.
 
